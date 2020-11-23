@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/application.css">
+    <title>Menu</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="#">
+            <h3>Goda <img class="love"
+                    src="data:image/png;base64,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"
+                    alt="love"> Street Fusion</h3>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="story.html">Our Story</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="menu.html">Menu<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Order Now!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron_menu jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Our Menu</h1>
+        </div>
+    </div>
+
+    <section class="appetizermenu">
+        <h1 class="appetizer">Appetizers</h1>
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1513442381178-5cde86b936fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=60"
+                        class="card-img-top" alt="tostones">
+                    <div class="card-body">
+                        <h5 class="card-title" id="tostones">Tostones</h5>
+                        <h5 class="price" id="4.99">$4.99</h5>
+                        <p class="card-text">A Puero Rican delicacy, tostones are a traditional side made from plantain. Comes with 10
+                            pieces. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1598726465740-455ad9c05fbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1057&q=80"
+                        class="card-img-top" alt="bowl">
+                    <div class="card-body">
+                        <h5 class="card-title" id="nachos">Nachos</h5>
+                        <h5 class="price" id="5.99">$5.99</h5>
+                        <p class="card-text">Choose between carne asada, chicken, pork, or our vegan option. Comes with
+                            mild, medium, or hot salsa, sourcream, and cheese.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1552332386-1634d96809cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                        class="card-img-top" alt="burrito">
+                    <div class="card-body">
+                        <h5 class="card-title" id="tomales">Tomales</h5>
+                        <h5 class="price" id="4.99">$4.99</h5>
+                        <p class="card-text">3 delicious tomales. Choose between meet or veggie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="entremenu">
+        <h1 class="entre">Entres</h1>
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+                        class="card-img-top" alt="tacos">
+                    <div class="card-body">
+                        <h5 class="card-title" id="tacos">Tacos</h5>
+                        <h5 class="price" id="8.99">$8.99</h5>
+                        <p class="card-text">3 delicious tacos. Choose between carne asada, chicken, pork, or our vegan
+                            option. Comes with mild, medium, or hot salsa, cilantro, lime, and cabbage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80"
+                        class="card-img-top" alt="bowl">
+                    <div class="card-body">
+                        <h5 class="card-title" id="bowl">Rice & Bean Bowl</h5>
+                        <h5 class="price" id="8.99">$8.99</h5>
+                        <p class="card-text">Choose between carne asada, chicken, pork, or our vegan option. Comes with
+                            mild, medium, or hot salsa, cilantro, lime, and cabbage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1566740933430-b5e70b06d2d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        class="card-img-top" alt="burrito">
+                    <div class="card-body">
+                        <h5 class="card-title">Burrito</h5>
+                        <h5 class="price" id="8.99">$8.99</h5>
+                        <p class="card-text">Choose between carne asada, chicken, pork, or our vegan option. Comes with
+                            mild, medium,
+                            or hot salsa, cilantro, lime, and cabbage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1534352956036-cd81e27dd615?ixlib=rb-1.2.1&auto=format&fit=crop&w=645&h=430&q=80" class="card-img-top" alt="enchilada">
+                    <div class="card-body">
+                        <h5 class="card-title" id="enchilada">3 Enchiladas</h5>
+                        <h5 class="price" id="7.99">$7.99</h5>
+                        <p class="card-text">Choose between carne asada, chicken, pork, or our vegan option. Comes with
+                            mild, medium, or hot salsa, cilantro, and lime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1566740933449-11e38b77e6e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="salad">
+                    <div class="card-body">
+                        <h5 class="card-title" id="salad">Taco Salad</h5>
+                        <h5 class="price" id="7.99">$7.99</h5>
+                        <p class="card-text">Choose between carne asada, chicken, pork, or our vegan option. Comes with
+                            mild, medium, or hot salsa, cilantro, and lime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1599974912757-e14942b9db2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="torta">
+                    <div class="card-body">
+                        <h5 class="card-title" id="torta">Torta</h5>
+                        <h5 class="price" id="8.99">$8.99</h5>
+                        <p class="card-text">Choose between carne asada, chicken, pork, or our vegan option. Comes with
+                            mild, medium, or hot salsa, cilantro, and lime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1595531401542-d0bb33afbfbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="toquitos">
+                    <div class="card-body">
+                        <h5 class="card-title" id="toquitos">4 Toquitos</h5>
+                        <h5 class="price" id="6.99">$6.99</h5>
+                        <p class="card-text">4 toquitos. Choose between carne asada, chicken, pork, or our vegan option. Comes with
+                            mild, medium, or hot salsa, cilantro, and lime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1003&q=80" class="card-img-top" alt="hamburger">
+                    <div class="card-body">
+                        <h5 class="card-title" id="hamburger">Hamburger</h5>
+                        <h5 class="price" id="9.99">$9.99</h5>
+                        <p class="card-text">Organic meat -- quarter pounder with cheese, tomato, pickle, and roasted onion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dessertmenu">
+        <h1 class="dessert">Desserts</h1>
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1560801619-01d71da0f70c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8aWNlJTIwY3JlYW18ZW58MHwwfDB8&auto=format&fit=crop&w=500&q=60"
+                        class="card-img-top" alt="icecream">
+                    <div class="card-body">
+                        <h5 class="card-title" id="icecream">Ice Cream</h5>
+                        <h5 class="price" id="3.99">2 scoops: $3.99</h5>
+                        <p class="card-text">Choose between chocolate, vanilla, strawberry, & cookies n' cream. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        class="card-img-top" alt="cheesecake">
+                    <div class="card-body">
+                        <h5 class="card-title" id="cheesecake">Cheesecake</h5>
+                        <h5 class="price" id="5.99">$5.99</h5>
+                        <p class="card-text">Choose between traditional, chocolate, or strawberry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=970&h=650&q=80"
+                        class="card-img-top" alt="crepes">
+                    <div class="card-body">
+                        <h5 class="card-title" id="crepes">3 Crepes</h5>
+                        <h5 class="price" id="5.99">$5.99</h5>
+                        <p class="card-text">3 delicious crepes. Choose one topping: strawberries, chocolate chips, caramel drizzle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="drinkmenu">
+        <h1 class="drink">Drinks</h1>
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1527960471264-932f39eb5846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        class="card-img-top" alt="soda">
+                    <div class="card-body">
+                        <h5 class="card-title" id="soda">Soda</h5>
+                        <h5 class="price" id="1.99">$1.99</h5>
+                        <p class="card-text">Free refills. Options include: Coca-Cola, Dr.Pepper, Sprite, Orange Fresca, & Lime Fresca.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1522057306606-8d84daa75e87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+                        class="card-img-top" alt="beer">
+                    <div class="card-body">
+                        <h5 class="card-title" id="beer">Craft Beer</h5>
+                        <h5 class="price" id="6.99">$6.99</h5>
+                        <p class="card-text">We ID everyone! Choose between our one of a kind selection of craft beers. Ask your server about our currrent options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com">Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.twitter.com">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="javascripts/application.js"></script>
+</body>
+
+</html>

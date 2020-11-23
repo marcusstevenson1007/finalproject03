@@ -1,7 +1,153 @@
 @import url('~normalize.css/normalize.css');
 
-* {
+*{
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* TODO */
+
+.navbar{
+  background-color: black;
 }
 
-/* TODO */
+.navbar-brand>h3{
+  color: gold;
+  margin-left: 15px;
+  margin-bottom: -5px;
+  padding-right: 10px;
+}
+
+.love{
+  width: 50px;
+  height: 50px;
+  margin-top: -15px;
+  margin-bottom: -10px;
+}
+
+.navbar-nav{
+  width: 100%;
+  justify-content: center;
+}
+
+.nav-item{
+  width: 100%;
+  text-align: center;
+}
+
+.nav-link:hover{
+  border: 2px solid gold;
+}
+
+.jumbotron{
+  background: url('https://images.unsplash.com/photo-1505496704829-37e28089504e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat 50% 25%;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.food_story{
+  position: center;
+  font-size: 50px;
+  color: gold;
+  outline-style: double;
+  text-shadow: 5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  padding: 10px;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+footer{
+  background-color: black;
+  clear: both;
+}
+
+.nav-link{
+  color: white;
+}
+
+.jumbotron_story{
+  background: url("https://images.unsplash.com/photo-1583347664435-7415436be899?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1545&q=80") 40% 50%;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 800px;
+}
+
+.jumbotron_story h1{
+  text-align: center;
+  font-size: 50px;
+  color: gold;
+  text-shadow: 5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  outline-style: double;
+  margin-top: 50px;
+}
+
+.goda > img{
+  float: right;
+  height: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.our_food > img{
+  clear: both;
+  float: left;
+  height: 200px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.history > img {
+  clear: both;
+  float: right;
+  margin: 10px;
+  height: 300px;
+}
+
+.goda, .our_food, .history{
+  margin: 10px;
+  clear: both;
+}
+
+.jumbotron_contact{
+  background: url('https://images.unsplash.com/photo-1527224538127-2104bb71c51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80') no-repeat 50% 85%;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.jumbotron_contact h1{
+  text-align: center;
+  font-size: 50px;
+  color: gold;
+  text-shadow: 5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  outline-style: double;
+  margin-top: 50px;
+}
+
+.jumbotron_menu{
+  background: url('https://images.unsplash.com/photo-1464195643332-1f236b1c2255?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80') 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 400px;
+  height: auto;
+}
+
+.jumbotron_menu h1{
+  text-align: center;
+  font-size: 50px;
+  color: gold;
+  text-shadow: 5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  outline-style: double;
+  margin-top: 50px;
+}
+
+.card-deck{
+  margin: 25px;
+}
+
+.appetizer, .entre, .dessert, .drink {
+  color: gold;
+  background-color: black;
+  text-align: center;
+}
