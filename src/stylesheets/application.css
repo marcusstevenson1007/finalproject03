@@ -60,6 +60,9 @@
 footer{
   background-color: black;
   clear: both;
+  /*position: fixed;
+  bottom: 0;*/
+  width: 100%;
 }
 
 .nav-link{
@@ -150,4 +153,84 @@ footer{
   color: gold;
   background-color: black;
   text-align: center;
+}
+
+
+.jumbotron_reserve{
+  background: url('https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fHJlc3RhdXJhbnR8ZW58MHx8MHw%3D&auto=format&fit=crop&w=1200&q=60') 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 400px;
+  height: auto;
+}
+
+.jumbotron_reserve h1{
+  text-align: center;
+  font-size: 50px;
+  color: gold;
+  text-shadow: 5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  outline-style: double;
+  margin-top: 50px;
+}
+
+.order-form .container {
+  color: #4c4c4c;
+  padding: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+}
+
+.order-form-label {
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.order-form-input {
+  width: 100%;
+  padding: 8px 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2em;
+  background-color: transparent;
+  border-color: #cccccc;
+}
+
+.btn-submit:hover {
+  background-color: #090909;
+}
+
+.sbtn{
+  display: flex;
+  justify-content: center;
+
+  width: 40%;
+}
+
+.submitbtn{
+  clear: both;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: black;
+  border: 2px solid gold;
+  width: 200px;
+  margin-top: 15px;
+}
+
+.reviews{
+  padding-bottom: 50px;
+  margin-left: 75px;
+}
+
+.leavereview{
+  margin-right: 75px;
+}
+
+#myform{
+  margin: 25px;
 }

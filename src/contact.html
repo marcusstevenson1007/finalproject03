@@ -35,7 +35,7 @@
                     <a class="nav-link active" href="contact.html">Contact<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Order Now!</a>
+                    <a class="nav-link" href="reserve.html">Reservations</a>
                 </li>
             </ul>
         </div>
@@ -59,7 +59,7 @@
                 <p class="card-text"><strong>Monday-Thursday </strong>11:00AM - 10:00PM</p>
                 <p class="card-text"><strong>Friday-Saturday </strong>10:00AM - 11:00PM</p>
                 <p class="card-text"><strong>Sunday </strong>12:00PM - 8:00PM</p>
-                <a href="menu.html" class="btn btn-primary">Order Now!</a>
+                <a href="reserve.html" class="btn btn-primary">Reserve Now</a>
             </div>
         </div>
         <div class="card">
@@ -74,7 +74,6 @@
                 <p class="card-text"><strong>Tuesday-Thursday </strong>11:00AM - 10:00PM</p>
                 <p class="card-text"><strong>Friday-Saturday </strong>10:00AM - 11:00PM</p>
                 <p class="card-text"><strong>Sunday </strong>Closed</p>
-                <a href="menu.html" class="btn btn-primary">Order Now!</a>
             </div>
         </div>
         <div class="card">
@@ -88,9 +87,43 @@
                 <p class="card-text"><strong>Monday-Thursday </strong>11:00AM - 10:00PM</p>
                 <p class="card-text"><strong>Friday-Saturday </strong>10:00AM - 11:00PM</p>
                 <p class="card-text"><strong>Sunday </strong>12:00PM - 8:00PM</p>
-                <a href="menu.html" class="btn btn-primary">Order Now!</a>
+                <a href="reserve.html" class="btn btn-primary">Reserve Now</a>
             </div>
         </div>
+    </div>
+
+    <button id="new-card" type="button" class="leavereview btn btn-success btn-lg float-right">Leave a Review!</button>
+    <h1 class="reviews">Our Reviews</h1>
+
+    <form id="myform" class="d-none">
+        <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="title" class="form-control" id="fname" name="fname" placeholder="First Name">
+        </div>
+        <div class="form-group">
+            <label for="last">Last Name Initital</label>
+            <input type="title" class="form-control" id="last" name="last" maxlength="2" placeholder="I.">
+        </div>
+        <div class="form-group">
+            <label for="rating">Rating</label>
+            <select name="reviewselect" id="rating">
+                <option selected>Choose a Review</option>
+                <option name="star" value="★" id="star"><span>★</span></option>
+                <option name="star" value="★★" id="star"><span>★★</span></option>
+                <option name="star" value="★★★" id="star"><span>★★★</option>
+                <option name="star" value="★★★★" id="star"><span>★★★★</span></option>
+                <option name="star" value="★★★★★" id="star"><span>★★★★★</span></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="review">Review</label>
+            <textarea class="form-control" id="review" name="review" placeholder="Type Review Here."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-danger cancel-form">Cancel</button>
+    </form>
+    <div class="row" id="cards">
+    </div>
     </div>
 
     <footer class="mt-4">
