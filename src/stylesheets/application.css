@@ -207,8 +207,7 @@ footer{
 .sbtn{
   display: flex;
   justify-content: center;
-
-  width: 40%;
+  width: 50%;
 }
 
 .submitbtn{
